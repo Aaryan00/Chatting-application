@@ -15,7 +15,9 @@ var connectionOptions =  {
     "transports" : ["websocket"]
 };
 
-var socket = io.connect('https://chat-with-mee.herokuapp.com/',connectionOptions);
+// var socket = io.connect('https://chat-with-mee.herokuapp.com/',connectionOptions);
+var socket = io.connect('https://localhost:5000',connectionOptions);
+
 // let socket;
 
 const Chat = ({location}) => {
